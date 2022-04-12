@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header  style="background-color: #EFF6FB;">
+    <div class="ms-auto text-center py-1" style="background-color: #D9F5F4;width: 134px;">
+        <a href="" class="icon-heart pe-4 text-primary"  style="font-size: 23px;"></a>
+        <a href="" class="icon-bag border-start ps-4 text-primary" style="font-size: 29px;"></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto text-center pb-4 mt-n2">
+                <img src="image/logo.png" alt="">
+                <h4 class="fw-medium pt-3 mb-0">Featured Collection</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Product Card -->
+<section class="pt-8">
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-9">
+            <div class="cardoutput row">
+               
+                    <!-- <img src="image/Rectangle 10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="d-flex pt-3">
+                        <div class="col-8">
+                        <h6 class="card-title"></h6>
+                        </div>
+                        <div class="col-4 text-end">
+                        <h6 class="">$56.99</h6>
+                        </div> 
+                    </div>
+                        <div>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">   
+                        </div>
+                        <div class="py-3">
+                            <a href="" class="btn btn-primary text-uppercase" style="font-size: 14px;">XS</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">S</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">M</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">L</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">XL</a> 
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <div>
+                     <a href="" class="btn text-uppercase"> Add To Cart</a>
+                    </div>
+                    <div class="ms-auto">
+                     <a href="" class="btn btn-secondary text-uppercase icon-heart" style="font-size: 23px;"> </a>
+                    </div>
+                    </div> -->
+              
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</body>
+<script type="text/javascript">
+
+class masterpractical{
+          
+          constructor(){
+            window.addEventListener('load',this.userdata.bind(this));
+            // this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
+            // this.cancelBtn.addEventListener('click',this.cancelbtnHandler.bind(this));
+            // this.updateBtn.addEventListener('click',this.updatehandler.bind(this));   
+          } 
+
+          userdata(event){
+            let url =("products.json");
+            fetch(url)
+            .then(res => res.json())
+            .then(data =>{
+                let output = "";
+                let cardoutput = document.querySelector('.cardoutput');
+                console.log(cardoutput)                // let title = this.title;
+                // title.innerHTML = data.products[0].handle; 
+                for(var i=0 ; i<data.products.length;i++)
+                {  
+                    cardoutput.innerHTML += `
+                   <div class = "col-4">
+                    <div class="card">
+                    <img src="${data.products[i].variants[0].featured_image.src}" alt="...">
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="d-flex pt-3">
+                        <div class="col-8">
+                        <h6 class="card-title text-capitalize">${data.products[i].handle} </h6>
+                        </div>
+                        <div class="col-4 text-end">
+                        <h6>$${data.products[0].variants[0].price}</h6>
+                        </div>
+                    </div>
+                        <div class = "radio">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">   
+                        </div>
+                        <div class="py-3">
+                            <a href="" class="btn btn-primary text-uppercase" style="font-size: 14px;">XS</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">S</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">M</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">L</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">XL</a> 
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <div>
+                     <a href="" class="btn text-uppercase"> Add To Cart</a>
+                    </div>
+                    <div class="ms-auto">
+                     <a href="" class="btn btn-secondary text-uppercase icon-heart" style="font-size: 23px;"> </a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                             `; 
+                }
+               
+            })
+          }
+        
+     
+}
+new masterpractical()
+</script>
+</html>

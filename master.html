@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<header  style="background-color: #EFF6FB;">
+    <div class="ms-auto text-center py-1" style="background-color: #D9F5F4;width: 134px;">
+        <a href="" class="icon-heart pe-4 text-primary"  style="font-size: 23px;"></a>
+        <a href="" class="icon-bag border-start ps-4 text-primary" style="font-size: 29px;"></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto text-center pb-4 mt-n2">
+                <img src="image/logo.png" alt="">
+                <h4 class="fw-medium pt-3 mb-0">Featured Collection</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar ac tortor imperdiet commodo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class=" mobile-drawer d-none position-absolute row me-0" style="background-color: #ffffff;left:70%;z-index: 10;top:0px">
+        <div class="col-12">
+            <div class="d-flex align-items-center border-bottom">
+                <div class="col-9 d-flex align-items-center">
+                    <h2 class="text-uppercase">your bag</h2><span class="ms-3"><h5 class="text-uppercase fw-normal">(2 items)</h5></span>
+                </div>
+                <div class="col-3 text-end">
+                    <a href="" class="icon-close"  id="close"></a>
+                </div>
+            </div>
+            <div class="py-3 row">
+                <div class=" d-flex col-3">
+                    <div class="" style="height: 100px;width: 100px;">
+                        <img src="image/Rectangle 10.jpg" alt="" class="h-100" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <p class="text-uppercase m-0 fw-bold">small naomi</p>
+                            <p>Color:green/xs</p>
+                            <div class="counter d-flex text-center" style="width: 102px; height: 34px;">
+                                <div class="button  col-4">
+                                  <a  class="icon-minus"  href=""  style="font-size: 10px; color: black;"></a>
+                                </div>
+                                <div class="number  col-4">
+                                  <h1 class="m-0" id="count" style="font-size: 13px;">1</h1>
+                                </div>
+                                <div class="button  col-4">
+                                  <a class="icon-plus" href="" style="font-size: 10px; color: black;"></a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 text-end">
+                            <a href="" class="icon-close" style="font-size: 14px;"></a>
+                            <p class="m-0 pt-6">$74.55</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-2">
+                <div class="row pt-2" style="background-color: #EFF5F7;">
+                    <div class="col-6">
+                        <h4 class="text-uppercase fw-bold">subtotal</h4>
+                    </div>
+                    <div class="col-6 text-end">
+                        <h4 class="text-uppercase ">$133</h4>
+                    </div>
+                    <div class="pt-1">
+                        <a href="" class="btn btn-success text-uppercase w-100"><span class="icon-lock pe-1"></span> checkout</a>
+                    </div>
+                    <div class="col-8 mx-auto pt-2">
+                        <p style="font-size: 13px;">Have a promo code? Enter your code at checkout.
+                                Shipping & taxes are calculated during checkout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Product Card -->
+<section class="pt-8">
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-9">
+            <div class="row align-items-center">
+            <div class="col-2">
+                <p>60 Results found</p>
+            </div>
+            <div class=" col-4 ms-auto text-end pb-4">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100 text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sort By Values
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"> <input type="radio" id="values" name="values" >
+                    <label for="values">Relevance</label><br></a></li>
+                    <li><a class="dropdown-item" href="#"> <input type="radio" id="values" name="values" >
+                    <label for="values">Title</label><br></a></li>
+                    <li><a class="dropdown-item" href="#"> <input type="radio" id="values" name="values">
+                    <label for="values">Recently Updated</label><br></a></li>
+                    <li><a class="dropdown-item" href="#"> <input type="radio" id="values" name="values" >
+                    <label for="values">Product Vendor</label><br></a></li>
+                    <li><a class="dropdown-item" href="#"> <input type="radio" id="values" name="values" >
+                    <label for="values">Product Type</label><br></a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+            <div class="cardoutput row">
+               
+                    <!-- <img src="image/Rectangle 10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="d-flex pt-3">
+                        <div class="col-8">
+                        <h6 class="card-title">Stormy </h6>
+                        </div>
+                        <div class="col-4 text-end">
+                        <h6>$56.99</h6>
+                        </div> 
+                    </div>
+                        <div>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">   
+                        </div>
+                        <div class="py-3">
+                            <a href="" class="btn btn-primary text-uppercase" style="font-size: 14px;">XS</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">S</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">M</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">L</a> 
+                            <a href="" class="btn btn-primary text-uppercase ms-2" style="font-size: 14px;">XL</a> 
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <div>
+                     <a href="" class="btn text-uppercase"> Add To Cart</a>
+                    </div>
+                    <div class="ms-auto">
+                     <a href="" class="btn btn-secondary text-uppercase icon-heart" style="font-size: 23px;"> </a>
+                    </div>
+                    </div> -->
+                
+            </div>
+            <div id="pagination" class="d-flex list-unstyled pt-6"></div>
+        </div>
+    </div>
+</div>
+</section>
+</body>
+<script data-swatches-colorlist-json type="application/json">
+    {
+      "aliceblue": "#F0F8FF",
+      "antiquewhite": "#FAEBD7",
+      "aqua": "#00FFFF",
+      "aquamarine": "#7FFFD4",
+      "army": "#4B5320",
+      "azure": "#F0FFFF",
+      "beige": "#F5F5DC",
+      "bisque": "#FFE4C4",
+      "black": "#000000",
+      "blanchedalmond": "#FFEBCD",
+      "blue": "#0000FF",
+      "blueviolet": "#8A2BE2",
+      "brown": "#A52A2A",
+      "burgundy": "#800020",
+      "burlywood": "#DEB887",
+      "cadetblue": "#5F9EA0",
+      "chartreuse": "#7FFF00",
+      "chelseagray": "#87857D",
+      "chocolate": "#D2691E",
+      "coral": "#FF7F50",
+      "cornflowerblue": "#6495ED",
+      "cornsilk": "#FFF8DC",
+      "crimson": "#DC143C",
+      "cyan": "#00FFFF",
+      "darkblue": "#00008B",
+      "darkcyan": "#008B8B",
+      "darkgoldenrod": "#B8860B",
+      "darkgray": "#A9A9A9",
+      "darkgreen": "#006400",
+      "darkkhaki": "#BDB76B",
+      "darkmagenta": "#8B008B",
+      "darkolivegreen": "#556B2F",
+      "darkorange": "#FF8C00",
+      "darkorchid": "#9932CC",
+      "darkred": "#8B0000",
+      "darksalmon": "#E9967A",
+      "darkseagreen": "#8FBC8F",
+      "darkslateblue": "#483D8B",
+      "darkslategray": "#2F4F4F",
+      "darkturquoise": "#00CED1",
+      "darkviolet": "#9400D3",
+      "deeppink": "#FF1493",
+      "deepskyblue": "#00BFFF",
+      "dimgray": "#696969",
+      "dodgerblue": "#1E90FF",
+      "firebrick": "#B22222",
+      "floralwhite": "#FFFAF0",
+      "forestgreen": "#228B22",
+      "fuchsia": "#FF00FF",
+      "gainsboro": "#DCDCDC",
+      "ghostwhite": "#F8F8FF",
+      "gold": "#FFD700",
+      "goldenrod": "#DAA520",
+      "gray": "#808080",
+      "green": "#008000",
+      "greenyellow": "#ADFF2F",
+      "heathergray": "#9AA297",
+      "honeydew": "#F0FFF0",
+      "hotcoral": "#F0605C",
+      "hotpink": "#FF69B4",
+      "indianred": "#CD5C5C",
+      "indigo": "#4B0082",
+      "ivory": "#FFFFF0",
+      "khaki": "#F0E68C",
+      "lavender": "#E6E6FA",
+      "lavenderblush": "#FFF0F5",
+      "lawngreen": "#7CFC00",
+      "lemonchiffon": "#FFFACD",
+      "lightblue": "#ADD8E6",
+      "lightcoral": "#F08080",
+      "lightcyan": "#E0FFFF",
+      "lightgoldenrodyellow": "#FAFAD2",
+      "lightgrey": "#D3D3D3",
+      "lightgreen": "#90EE90",
+      "lightolive": "#B8BC86",
+      "lightpink": "#FFB6C1",
+      "lightpurple": "#B19CD9",
+      "lightsalmon": "#FFA07A",
+      "lightseagreen": "#20B2AA",
+      "lightskyblue": "#87CEFA",
+      "lightslategray": "#778899",
+      "lightsteelblue": "#B0C4DE",
+      "lightyellow": "#FFFFE0",
+      "lime": "#00FF00",
+      "limegreen": "#32CD32",
+      "linen": "#FAF0E6",
+      "magenta": "#FF00FF",
+      "maroon": "#800000",
+      "mauve": "#E0B0FF",
+      "mediumaquamarine": "#66CDAA",
+      "mediumblue": "#0000CD",
+      "mediumorchid": "#BA55D3",
+      "mediumpurple": "#9370D8",
+      "mediumseagreen": "#3CB371",
+      "mediumslateblue": "#7B68EE",
+      "mediumspringgreen": "#00FA9A",
+      "mediumturquoise": "#48D1CC",
+      "mediumvioletred": "#C71585",
+      "midnightblue": "#191970",
+      "midnightteal": "#1A1A3A",
+      "mint": "#F5FFFA",
+      "mistyrose": "#FFE4E1",
+      "moccasin": "#FFE4B5",
+      "mocha": "#967969",
+      "navajowhite": "#FFDEAD",
+      "navy": "#000080",
+      "ochra": "#FDF5E6",
+      "oldlace": "#FDF5E6",
+      "olive": "#808000",
+      "olivedrab": "#6B8E23",
+      "orange": "#FFA500",
+      "orangered": "#FF4500",
+      "orchid": "#DA70D6",
+      "palegoldenrod": "#EEE8AA",
+      "palegreen": "#98FB98",
+      "paleturquoise": "#AFEEEE",
+      "palevioletred": "#D87093",
+      "papayawhip": "#FFEFD5",
+      "peachpuff": "#FFDAB9",
+      "peru": "#CD853F",
+      "pink": "#FFC0CB",
+      "plum": "#DDA0DD",
+      "powderblue": "#B0E0E6",
+      "purple": "#800080",
+      "rebeccapurple": "#663399",
+      "red": "#FF0000",
+      "rosybrown": "#BC8F8F",
+      "royalblue": "#4169E1",
+      "saddlebrown": "#8B4513",
+      "salmon": "#FA8072",
+      "sandybrown": "#F4A460",
+      "seagreen": "#2E8B57",
+      "seashell": "#FFF5EE",
+      "sienna": "#A0522D",
+      "silver": "#C0C0C0",
+      "skyblue": "#87CEEB",
+      "slateblue": "#6A5ACD",
+      "slategray": "#708090",
+      "snow": "#FFFAFA",
+      "springgreen": "#00FF7F",
+      "steelblue": "#4682B4",
+      "tan": "#D2B48C",
+      "teal": "#008080",
+      "thistle": "#D8BFD8",
+      "tomato": "#FF6347",
+      "turquoise": "#40E0D0",
+      "violet": "#EE82EE",
+      "wheat": "#F5DEB3",
+      "white": "#FFFFFF",
+      "whitesmoke": "#F5F5F5",
+      "yellow": "#FFFF00",
+      "yellowgreen": "#9ACD32",
+      "blackorange": "https://cdn.shopify.com/s/files/1/2592/4270/files/swatch-black-orange.jpg?11677064816970603054",
+      "naturalwood": "https://cdn.shopify.com/s/files/1/2592/4270/files/swatch-natural-wood.jpg?5914773578951770782"
+    }
+ </script>
+<script type="text/javascript">
+      let colorCodeScript = document.querySelector('[data-swatches-colorlist-json]');
+      let colorsList = JSON.parse(colorCodeScript.innerHTML);
+      console.log(colorsList.aqua)
+      let start = 0;
+      let end = 12;
+class masterpractical{
+          
+          constructor(){
+            this.card = document.querySelector('.card');
+            console.log(this.card)
+            window.addEventListener('load',this.userdata.bind(this));
+            this.bagicon = document.querySelector('.icon-bag');
+            this.bagicon.addEventListener('click',this.showmobiledrawer.bind(this));
+            this.closeicon = document.querySelector('#close');
+            this.closeicon.addEventListener('click',this.closedrawer.bind(this));
+            // this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
+            // this.cancelBtn.addEventListener('click',this.cancelbtnHandler.bind(this));
+            // this.updateBtn.addEventListener('click',this.updatehandler.bind(this));   
+          } 
+
+          userdata(event){
+            let url =("products.json");
+            let paginationwraaper = document.querySelector('#pagination');
+            fetch(url)
+            .then(res => res.json())
+            .then(data =>{
+                // let handle = data.products[0];
+                // console.log(handle);
+                // let price = data.products[0].variants[0].price;
+                // console.log(price)
+                // let image = data.products[0].variants[0].featured_image.src;
+                // console.log(image)
+                let options= data.products[0].options[0].name;
+                console.log(options);
+                let output = "";
+                let totalcount=data.products.length;
+                    console.log(totalcount);
+                    let perpagecount=12;
+                     let perpagecard = Math.ceil(totalcount/perpagecount);
+                     for (let i=0;i<perpagecard;i++){
+                        let anchor=document.createElement('a');
+                        anchor.classList.add("page-link");
+                        anchor.setAttribute("href",`?page=${i+1}`);
+                        anchor.innerHTML= i+1;
+                        let count=i+1;
+                        let pageitem=document.createElement("li");
+                        pageitem.classList.add("page-item");
+                        pageitem.classList.add("mx-1");
+                        pageitem.classList.add("px-2");
+                        pageitem.setAttribute("data-num",i+1)
+                        pageitem.appendChild(anchor);
+                        paginationwraaper.appendChild(pageitem);
+                        pageitem.addEventListener('click',(event)=>{
+                            var end=(count*perpagecount)-1;
+                            var start=(end -perpagecount)+1;
+                            localStorage.setItem("Start",start);
+                            localStorage.setItem("End",end+1);
+                            location.reload();
+                         })
+                     }
+                let cardoutput = document.querySelector('.cardoutput');
+                console.log(cardoutput) 
+               // let title = this.title;
+                // title.innerHTML = data.products[0].handle;
+               
+
+                if(localStorage.getItem("Start")==null ||localStorage.getItem("End")==null){
+                    let start = 0;
+                    let end = 11;
+                    localStorage.setItem("Start",start);
+                    localStorage.setItem("End",end+1);
+                }
+                let start = localStorage.getItem("Start");
+                let end = localStorage.getItem("End");
+                for(let i=start; i<end;i++)
+                {  
+                    // console.log(options);
+                    let product = data.products[i];
+                    let optionsHTML = '<div class="product-options">';
+                    product.options.forEach(option => {
+                        let optionName = option.name.toLowerCase();
+                        if(optionName == 'Title'){
+                            let div = document.querySelector('.product-options');
+                            div.classList.add('d-none');
+                        }
+                        let optionHTML = `<div class="options-${optionName}" data-index="${option.position}">`;
+                        option.values.forEach(val => {
+                            
+                            if(optionName == 'color'){
+                                optionHTML += `<input class="form-check-input" type="radio" name="${optionName}" value="${val}" style="background-color:${colorsList[val]}"> `;
+                            }
+                            else if(optionName == 'size'){
+                                optionHTML += `
+                                    <form class="boxed py-3">
+                                    <input type="radio" id="${val}" name="size" value="">
+                                    <label for="${val}">${val}</label>   
+                                `;
+                            }
+                        });
+                        optionHTML += '</form> </div>';
+                        optionsHTML += optionHTML;
+                       
+                    });
+                    optionsHTML += '</div>';
+                    cardoutput.innerHTML += `
+                   <div class = "col-4">
+                    <div class="card h-100 pb-5">
+                    <img src="${product.variants[0].featured_image.src}" alt="...">
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="d-flex pt-3">
+                        <div class="col-8">
+                        <h6 class="card-title text-capitalize">${product.handle} </h6>
+                        </div>
+                        <div class="col-4 text-end">
+                        <h6>$${product.variants[0].price}</h6>
+                        </div>
+                    </div>
+                        <div>
+                         ${optionsHTML}
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer d-flex">
+                    <div>
+                     <a href="" class="btn text-uppercase addtocard"> Add To Cart</a>
+                    </div>
+                    <div class="ms-auto">
+                     <a href="" class="btn btn-secondary text-uppercase icon-heart" style="font-size: 23px;"> </a>
+                    </div>
+                    </div>
+                    </div>
+                    </div> `;                
+                    // let size = data.products[i].options[1].values[0];
+                    // console.log(size) 
+             
+                    // if(options == 'Color' )
+                    // {   
+                    //     console.log(i)
+                    // var radiobox = document.createElement('input');
+                    //     radiobox.type = 'radio';
+                    //     radiobox.id = 'contact';
+                    //     radiobox.value = 'email';
+                    //     let radio = document.querySelector('#radio');
+                    //     let index = radio.dataset.index;
+                    //     console.log(index)
+                    //     radio.appendChild(radiobox);
+                    // }
+                }
+            })
+        }
+          addtocard(event){
+            event.preventDefault();
+            console.log('hi')
+          }
+          showmobiledrawer(){
+              event.preventDefault();
+           let mobiledrawer = document.querySelector('.mobile-drawer');
+           mobiledrawer.classList.replace("d-none", "d-block")
+          }
+
+          closedrawer(){
+            event.preventDefault();
+           let close = document.querySelector('.mobile-drawer');
+           close.classList.replace("d-block", "d-none")
+          }
+         
+       
+     
+}
+new masterpractical()
+</script>
+</html>
