@@ -30,3 +30,6 @@
 ## Tested With Browser
 - Google Chrome
 - Mozila Firefox
+- 
+## Note
+- Left the console so that developer know that functionality is working , but i am unable to display it on web page.
