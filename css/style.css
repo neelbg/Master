@@ -1,0 +1,41 @@
+.counter {
+    display: flex;
+    background: #F6F6F6;
+    border-radius: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .col > button, .number {
+    background: #F6F6F6;
+    border: 0px;
+    text-align: center;
+  }
+  .button {
+    font-family: sans-serif;
+  }
+  button {
+    color: #FF370C;
+    user-select: none;
+    outline: none;
+  }
+
+  .boxed label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    width: 35px;
+    line-height: 15px;
+    padding: 7px 0;
+    border: solid 1px black;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  
+  .boxed input[type="radio"] {
+    display: none;
+  }
+  .boxed input[type="radio"]:checked + label {
+   color: #ffffff;
+   background-color: black;
+  }
