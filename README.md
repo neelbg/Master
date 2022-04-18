@@ -28,6 +28,3 @@
 ## Checked With Browser
 - Google Chrome
 - Mozila Firefox
-## Checked With Browser
-- Google Chrome
-- Mozila Firefox
