@@ -25,6 +25,6 @@
 - Unable to display addtocart product functionality
 - Filtering of product
 - Sorting of product 
-## Checked With Browser
+## Tested With Browser
 - Google Chrome
 - Mozila Firefox
