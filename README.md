@@ -25,6 +25,8 @@
 - Unable to display addtocart product functionality
 - Filtering of product
 - Sorting of product 
+## Personal Experience
+- I am glad that i was given the task as i came across a lot of new functionalities which i built for the first time and also the practical contained mixture of various things altogether.
 ## Tested With Browser
 - Google Chrome
 - Mozila Firefox
