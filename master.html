@@ -800,10 +800,8 @@
             document.getElementById('number').value = value;
             }
             let currentTarget = event.currentTarget;
-            console.log(event.currentTarget)
             let div = currentTarget.closest('div');
             let index = div.dataset.index;
-            console.log(index)
             let price = practicalData.products[index].variants[0].price;
             var newprice = document.querySelector('.priceitem');
             newprice.innerHTML = `$${price*value}`;
@@ -830,7 +828,6 @@
             let currentprice = document.querySelector('.priceitem').innerHTML;
             let myarray = currentprice.substr(1, 2);
             let number = parseInt(myarray);
-            console.log(number,value+1);
             number = number - price;
             let newprice = document.querySelector('.priceitem');
             newprice.innerHTML = `$${number}`
